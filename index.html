@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div id="root">
+        <!-- ===================== HEADER ===================== -->
+        <header id="header" class="d-f aic jcsb px2">
+            <div class="header__logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="d-f jcc aic col">
+                <ul class="header__nav col d-f jce m-2r p2r">
+                    <li class="header__nav__item mx1">
+                        <a href="#" class="header__nav__link" data-page="home">Trang chủ</a>
+                    </li>
+                    <div class="header__nav__line"></div>
+                </ul>
+                <button class="btn__login">
+                    Đăng nhập
+                </button>
+                <div class="user__wrap d-f aic">
+                    <i class='bx bxs-user-circle'></i>
+                    <div class="user__controls">
+                        <p class="user__logout">
+                            Đăng xuất
+                        </p>
+                    </div>
+                    <p class="user__name">
+                        Admin123
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- ======================== SEARCH ======================== -->
+        <div class="pt1">
+            <div class="search container d-f mxa py1 px5">
+                <div class="d-f jcc aic col px5">
+                    <div class="search__wrap col">
+                        <input type="text" class="search__input col12" placeholder="Tìm kiếm...">
+                        <div class="search__list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================== CONTAINER =========================== -->
+        <div id="content" class="container mxa pb3">
+        </div>
+
+        <!-- ============================ FOOTER ============================ -->
+        <footer id="footer">
+            <p>© Sản phẩm của nhóm sinh viên Hùng, Long và Tuấn lớp UDPM1 K11</p>
+        </footer>
+
+
+        <!-- ========================= LOGIN ========================= -->
+        <div class="modal d-f">
+            <div class="modal__inner d-f column jcc aic" id="login">
+                <h2 class="login__title">Đăng nhập</h2>
+                <form class="modal__login col12">
+                    <div class="input__item d-f aic jcsb wrap">
+                        <label for="user" class="login__label col4">Tài khoản:</label>
+                        <input type="text" id="user" class="login__input login__input--login col7">
+                        <div class="col3"></div>
+                        <p class="input__mess my1 col7"></p>
+                    </div>
+                    <div class="input__item d-f aic jcsb col12 wrap">
+                        <label for="pass" class="login__label col4">Mật khẩu:</label>
+                        <input type="password" id="pass" class="login__input login__input--login col7">
+                        <div class="col3"></div>
+                        <p class="input__mess my1 col7"></p>
+                    </div>
+                    <div class="input__item d-f aic jcc column jcc">
+                        <p class="check__login">*Tài khoản và mật khẩu không đúng</p>
+                        <button class="login__submit login">Đăng nhập</button>
+                        <p class="register__btn">Đăng ký</p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal__inner d-f column jcc aic" id="register">
+                <h2 class="login__title">Đăng ký</h2>
+                <form class="modal__login col12">
+                    <div class="input__item d-f aic jcsb col12 wrap">
+                        <label for="user" class="login__label col4">Tài khoản:</label>
+                        <input type="text" id="user" class="login__input login__input--register col7">
+                        <div class="col3"></div>
+                        <p class="input__mess my1 col7"></p>
+                    </div>
+                    <div class="input__item d-f aic jcsb col12 wrap">
+                        <label for="pass" class="login__label col4">Mật khẩu:</label>
+                        <input type="password" id="pass" class="login__input login__input--register col7">
+                        <div class="col3"></div>
+                        <p class="input__mess my1 col7"></p>
+                    </div>
+                    <div class="input__item d-f aic jcc column jcc">
+                        <button class="login__submit register">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/javascript/main.js" type="module"></script>
+</body>
+
+</html>
