@@ -46,7 +46,7 @@ export default data => {
                 Liên hệ
             </h2>
             <div class="contact">
-                <div class="d-f wrap m-2r jcc aic my1">
+                <div class="d-f wrap m-2r jcc aic">
                     <a class="home__cate-inner d-f aic px2 space2r radius10 fz10r"
                     style="height: 150px;"
                     href="https://www.messenger.com/t/100032971607900">
